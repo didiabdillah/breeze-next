@@ -10,7 +10,8 @@ const AppLayout = ({ children }) => {
     if (!user) {
         return <Loading />
     }
-
+    console.log(user);
+    
     return (
         <div className="min-h-screen bg-gray-100">
             <Navigation user={user} />
